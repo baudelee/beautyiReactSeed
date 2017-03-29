@@ -1,0 +1,107 @@
+{
+  "name": "HiFox-Front",
+  "version": "1.0.0",
+  "description": "react, flux, es2015, webpack",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server --progress --hot --watch --host 0.0.0.0",
+    "server": "node mockServer.js",
+    "build": "NODE_ENV=development webpack  --progress ",
+    "buildLine": "NODE_ENV=production webpack --progress ",
+    "upload": "gulp deploy112" ,
+    "uploadDev": "gulp deployDev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SizheCai/HiFox-Lab"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "babel": {
+  "presets": [
+    "react",
+    "latest",
+    "stage-0"
+  ],
+  "plugins": [
+    "babel-plugin-transform-decorators-legacy",
+    "react-hot-loader/babel",
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": true
+      }
+    ]
+  ]
+},
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-import": "^1.1.1",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-register": "^6.24.0",
+    "compass": "^0.1.1",
+    "css-loader": "^0.23.1",
+    "ember-cli-materialize": "^0.19.5",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-ssh": "^0.6.0",
+    "html-webpack-plugin": "^2.21.0",
+    "node-sass": "^3.8.0",
+    "react-addons-perf": "^15.3.0",
+    "react-hot-loader": "^1.3.0",
+    "react-tap-event-plugin": "^2.0.1",
+    "redux-devtools": "^3.3.1",
+    "sass": "^0.5.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "underscore": "^1.8.3",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "antd": "^2.5.2",
+    "babel-plugin-import": "^1.1.1",
+    "babel-polyfill": "^6.9.1",
+    "compass": "^0.1.1",
+    "css-loader": "^0.23.1",
+    "expose-loader": "^0.7.1",
+    "file-loader": "^0.9.0",
+    "halogen": "^0.2.0",
+    "highcharts": "^v5.0.6",
+    "html-webpack-plugin": "^2.21.0",
+    "jquery": "^3.0.0",
+    "keydown": "^0.0.3",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "query-string": "^4.3.2",
+    "react": "^15.3.0",
+    "react-addons-perf": "^15.3.0",
+    "react-addons-update": "^15.3.0",
+    "react-bootstrap": "^0.29.5",
+    "react-cookie": "^0.4.8",
+    "react-dom": "^15.4.0",
+    "react-dropzone": "^3.5.3",
+    "react-fileupload": "^2.3.0",
+    "react-redux": "^4.4.5",
+    "react-redux-loading-bar": "^2.7.0",
+    "react-router": "^2.8.1",
+    "react-router-redux": "^4.0.7",
+    "react-tap-event-plugin": "^2.0.1",
+    "react-time": "^4.2.0",
+    "react-weui": "^0.4.1",
+    "redux": "^3.5.2",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-devtools-log-monitor": "^1.0.11",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.1.0",
+    "style-loader": "^0.13.1",
+    "underscore": "^1.8.3",
+    "url-loader": "^0.5.7",
+    "weui": "^0.4.3"
+  }
+}
